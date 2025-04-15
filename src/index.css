@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  font-family: sans-serif;
+  color: #eee;
+}
+
+#root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes breath-star {
+  0% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.6; transform: scale(1); }
+}
+
+.animate-breath-star {
+  animation: breath-star 3s infinite alternate ease-in-out;
+}
+
+@keyframes breath-nebula {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0.1; }
+}
+
+.animate-breath-nebula {
+  animation: breath-nebula 5s infinite alternate ease-in-out;
+}
+
+@keyframes breath-planet {
+  0% { transform: scale(0.98); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(0.98); }
+}
+
+.animate-breath-planet {
+  animation: breath-planet 4s infinite alternate ease-in-out;
+}
+
+@keyframes breath-hud {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.animate-breath-hud {
+  animation: breath-hud 2.5s infinite alternate ease-in-out;
+}
