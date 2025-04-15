@@ -16,6 +16,12 @@ body {
   height: 100vh;
 }
 
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes breath-star {
   0% { opacity: 0.6; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.1); }

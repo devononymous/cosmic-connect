@@ -1,13 +1,13 @@
-import React from 'react'
-import SplashCursor from './components/utils/SplashCurosr' // Uncomment if needed and ensure the module exists
+import React from 'react';
+
+import Landing from './screens/Landing';
+
 
 const App: React.FC = () => {
   return (
-    <div>App
-      <SplashCursor />
+  <div className="relative w-full h-screen overflow-hidden">
+   <Landing/>
+  </div>
+  )};
 
-    </div>
-  )
-}
-
-export default App
+export default App;
